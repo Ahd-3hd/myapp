@@ -29,7 +29,9 @@ class _HomePageState extends State<HomePage> {
                     Slogan(),
                     Hero(
                       tag: "logo_hero",
-                      child: Logo(),
+                      child: Logo(
+                        shrink: false,
+                      ),
                     ),
                     Container(
                       margin: EdgeInsets.all(20.0),
