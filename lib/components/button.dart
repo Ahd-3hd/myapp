@@ -1,3 +1,4 @@
+import 'package:ahdev/pages/web_select_type.dart';
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
@@ -17,7 +18,13 @@ class Button extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 0),
       child: RaisedButton(
         color: Color(0xffEF476F),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => WebSelectType(),
+            ),
+          );
+        },
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
