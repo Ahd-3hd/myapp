@@ -97,8 +97,7 @@ class SingleSquare extends StatefulWidget {
 class _SingleSquareState extends State<SingleSquare> {
   @override
   Widget build(BuildContext context) {
-    return AnimatedPositioned(
-      duration: Duration(milliseconds: 500),
+    return Positioned(
       top: widget.top,
       left: widget.left,
       child: Opacity(
@@ -133,8 +132,7 @@ class Graph extends StatefulWidget {
 class _GraphState extends State<Graph> {
   @override
   Widget build(BuildContext context) {
-    return AnimatedPositioned(
-      duration: Duration(milliseconds: 500),
+    return Positioned(
       top: widget.top,
       left: widget.left,
       child: Opacity(
@@ -168,10 +166,9 @@ class Rectangle extends StatefulWidget {
 class _RectangleState extends State<Rectangle> {
   @override
   Widget build(BuildContext context) {
-    return AnimatedPositioned(
+    return Positioned(
       left: widget.left,
       top: widget.top,
-      duration: Duration(milliseconds: 500),
       child: Container(
         width: widget.width,
         height: widget.height,
