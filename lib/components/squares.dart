@@ -9,6 +9,8 @@ class Squares extends StatefulWidget {
 }
 
 class _SquaresState extends State<Squares> {
+  bool isLoaded = false;
+
   @override
   Widget build(BuildContext context) {
     double _width = MediaQuery.of(context).size.width / 6;
