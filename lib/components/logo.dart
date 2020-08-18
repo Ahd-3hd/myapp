@@ -8,7 +8,7 @@ class Logo extends StatelessWidget {
   Widget build(BuildContext context) {
     return shrink
         ? Align(
-            alignment: Alignment.topRight,
+            alignment: Alignment.topCenter,
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 70, horizontal: 50),
               width: 100.0,

@@ -1,9 +1,9 @@
+import 'package:ahdev/components/background.dart';
 import 'package:ahdev/components/button.dart';
 import 'package:ahdev/components/logo.dart';
 import 'package:ahdev/components/slogan.dart';
 import 'package:ahdev/components/social_accounts.dart';
 import 'package:flutter/material.dart';
-import 'package:ahdev/components/squares.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -20,10 +20,10 @@ class _HomePageState extends State<HomePage> {
         body: Container(
           child: Stack(
             children: [
-              Squares(),
+              Background(),
               Center(
                 child: Column(
-                  mainAxisSize: MainAxisSize.min,
+                  mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Slogan(),
@@ -61,10 +61,10 @@ class _HomePageState extends State<HomePage> {
                         size: 40,
                       ),
                     ),
+                    SocialAccounts()
                   ],
                 ),
               ),
-              SocialAccounts()
             ],
           ),
         ),
