@@ -51,6 +51,7 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.white,
                         size: 40,
                       ),
+                      route: '/web_select_type',
                     ),
                     Button(
                       text: 'Mobile App',
@@ -60,6 +61,8 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.white,
                         size: 40,
                       ),
+                      //TODO
+                      route: '/web_select_type',
                     ),
                     SocialAccounts()
                   ],

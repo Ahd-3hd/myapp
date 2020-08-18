@@ -1,5 +1,6 @@
 import 'package:ahdev/components/background.dart';
 import 'package:ahdev/components/logo.dart';
+import 'package:ahdev/components/option_card.dart';
 import 'package:flutter/material.dart';
 
 class WebSelectType extends StatefulWidget {
@@ -38,85 +39,36 @@ class _WebSelectTypeState extends State<WebSelectType> {
                 title: 'BLOG OR MAGAZINE',
                 descr:
                     'Websites that feature regularly updated Articles,  Photos and videos that are informational and educational.',
+                route: '/web_design_select',
               ),
               OptionCard(
                 title: 'e-COMMERCE',
                 descr:
                     'An e-commerce website is an online shopping destination where users can purchase products or services from your company.',
+                route: '/web_design_select',
               ),
               OptionCard(
                 title: 'PERSONAL OR PORTFOLIO',
                 descr:
                     'Showcase your talent or your work or simply share your life with others.',
+                route: '/web_design_select',
               ),
               OptionCard(
                 title: 'Landing Page',
                 descr:
                     'A web page that is specific for marketing campaigns that drives visitors to take a specific action and generate customers.',
+                route: '/web_design_select',
               ),
               OptionCard(
                 title: 'SOCIALMEDIA OR FORUMS',
                 descr:
                     'Similar to Facebook, Twitter and other platforms, These types of websites are created as a platform for people to communicate. ',
+                route: '/web_design_select',
               ),
             ],
           )),
         ],
       )),
-    );
-  }
-}
-
-class OptionCard extends StatelessWidget {
-  final String title;
-  final String descr;
-  const OptionCard({
-    Key key,
-    @required this.title,
-    @required this.descr,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: 15.0,
-        vertical: 10,
-      ),
-      child: InkWell(
-        onTap: () {
-          print('sdf');
-        },
-        child: Card(
-          child: Container(
-            padding: EdgeInsets.all(15.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  this.title,
-                  style: TextStyle(
-                    color: Color(0xffEF476F),
-                    fontWeight: FontWeight.w800,
-                    fontSize: 20.0,
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  this.descr,
-                  style: TextStyle(
-                    color: Color(0xff073B4C),
-                    fontWeight: FontWeight.w600,
-                    fontSize: 13.0,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
     );
   }
 }

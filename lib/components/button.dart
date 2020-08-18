@@ -5,11 +5,13 @@ class Button extends StatelessWidget {
   final Color color;
   final Icon passedIcon;
   final String text;
+  final String route;
   const Button(
       {Key key,
       @required this.color,
       @required this.passedIcon,
-      @required this.text})
+      @required this.text,
+      @required this.route})
       : super(key: key);
 
   @override
@@ -19,11 +21,7 @@ class Button extends StatelessWidget {
       child: RaisedButton(
         color: Color(0xffEF476F),
         onPressed: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => WebSelectType(),
-            ),
-          );
+          Navigator.pushNamed(context, this.route);
         },
         child: Padding(
           padding: const EdgeInsets.all(8.0),
