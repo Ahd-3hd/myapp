@@ -1,3 +1,4 @@
+import 'package:ahdev/components/background.dart';
 import 'package:ahdev/components/logo.dart';
 import 'package:flutter/material.dart';
 
@@ -13,51 +14,55 @@ class _WebSelectTypeState extends State<WebSelectType> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(
-            child: ListView(
-          children: [
-            Hero(
-              tag: "logo_hero",
-              child: Logo(
-                shrink: true,
+          body: Stack(
+        children: [
+          Background(),
+          Container(
+              child: ListView(
+            children: [
+              Hero(
+                tag: "logo_hero",
+                child: Logo(
+                  shrink: true,
+                ),
               ),
-            ),
-            Text(
-              'Select Type:',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                fontSize: 20.0,
+              Text(
+                'Select Type:',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 20.0,
+                ),
               ),
-            ),
-            OptionCard(
-              title: 'BLOG OR MAGAZINE',
-              descr:
-                  'Websites that feature regularly updated Articles,  Photos and videos that are informational and educational.',
-            ),
-            OptionCard(
-              title: 'e-COMMERCE',
-              descr:
-                  'An e-commerce website is an online shopping destination where users can purchase products or services from your company.',
-            ),
-            OptionCard(
-              title: 'PERSONAL OR PORTFOLIO',
-              descr:
-                  'Showcase your talent or your work or simply share your life with others.',
-            ),
-            OptionCard(
-              title: 'Landing Page',
-              descr:
-                  'A web page that is specific for marketing campaigns that drives visitors to take a specific action and generate customers.',
-            ),
-            OptionCard(
-              title: 'SOCIALMEDIA OR FORUMS',
-              descr:
-                  'Similar to Facebook, Twitter and other platforms, These types of websites are created as a platform for people to communicate. ',
-            ),
-          ],
-        )),
-      ),
+              OptionCard(
+                title: 'BLOG OR MAGAZINE',
+                descr:
+                    'Websites that feature regularly updated Articles,  Photos and videos that are informational and educational.',
+              ),
+              OptionCard(
+                title: 'e-COMMERCE',
+                descr:
+                    'An e-commerce website is an online shopping destination where users can purchase products or services from your company.',
+              ),
+              OptionCard(
+                title: 'PERSONAL OR PORTFOLIO',
+                descr:
+                    'Showcase your talent or your work or simply share your life with others.',
+              ),
+              OptionCard(
+                title: 'Landing Page',
+                descr:
+                    'A web page that is specific for marketing campaigns that drives visitors to take a specific action and generate customers.',
+              ),
+              OptionCard(
+                title: 'SOCIALMEDIA OR FORUMS',
+                descr:
+                    'Similar to Facebook, Twitter and other platforms, These types of websites are created as a platform for people to communicate. ',
+              ),
+            ],
+          )),
+        ],
+      )),
     );
   }
 }
