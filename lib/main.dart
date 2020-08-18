@@ -1,5 +1,6 @@
 import 'package:ahdev/pages/design_select.dart';
 import 'package:ahdev/pages/domain_select.dart';
+import 'package:ahdev/pages/info_form.dart';
 import 'package:ahdev/pages/web_select_type.dart';
 import 'package:flutter/material.dart';
 import 'package:ahdev/pages/home_page.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/web_select_type': (context) => WebSelectType(),
         '/web_design_select': (context) => DesignSelect(),
         '/web_domain_select': (context) => DomainSelect(),
+        '/web_info_form': (context) => InfoForm(),
       },
     );
   }

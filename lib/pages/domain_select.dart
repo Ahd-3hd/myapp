@@ -35,11 +35,11 @@ class _DomainSelectState extends State<DomainSelect> {
               ),
               OptionCard(
                 title: 'Yes I do have my own domain & host',
-                route: '/web_design_select',
+                route: '/web_info_form',
               ),
               OptionCard(
                 title: "No, I need a domain & host",
-                route: '/web_design_select',
+                route: '/web_info_form',
               ),
             ],
           )),
