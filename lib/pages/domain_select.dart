@@ -3,12 +3,12 @@ import 'package:ahdev/components/logo.dart';
 import 'package:ahdev/components/option_card.dart';
 import 'package:flutter/material.dart';
 
-class DesignSelect extends StatefulWidget {
+class DomainSelect extends StatefulWidget {
   @override
-  _DesignSelectState createState() => _DesignSelectState();
+  _DomainSelectState createState() => _DomainSelectState();
 }
 
-class _DesignSelectState extends State<DesignSelect> {
+class _DomainSelectState extends State<DomainSelect> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -26,7 +26,7 @@ class _DesignSelectState extends State<DesignSelect> {
                 ),
               ),
               Text(
-                'Do you have a design?',
+                'Do you have a domain & host?',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontWeight: FontWeight.w800,
@@ -34,12 +34,12 @@ class _DesignSelectState extends State<DesignSelect> {
                 ),
               ),
               OptionCard(
-                title: 'Yes I do have my own design',
-                route: '/web_domain_select',
+                title: 'Yes I do have my own domain & host',
+                route: '/web_design_select',
               ),
               OptionCard(
-                title: "No, I need a new design",
-                route: '/web_domain_select',
+                title: "No, I need a domain & host",
+                route: '/web_design_select',
               ),
             ],
           )),

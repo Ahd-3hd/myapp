@@ -1,4 +1,5 @@
 import 'package:ahdev/pages/design_select.dart';
+import 'package:ahdev/pages/domain_select.dart';
 import 'package:ahdev/pages/web_select_type.dart';
 import 'package:flutter/material.dart';
 import 'package:ahdev/pages/home_page.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/web_select_type': (context) => WebSelectType(),
         '/web_design_select': (context) => DesignSelect(),
+        '/web_domain_select': (context) => DomainSelect(),
       },
     );
   }
